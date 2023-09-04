@@ -3,7 +3,6 @@
 import { currency_list } from './modules/currencies.js';
 
 ///////////////////////SELECTORS
-const myKey = '4a481ade6b3525871bd0c277';
 const select1 = document.getElementById('selector-1');
 const select2 = document.getElementById('selector-2');
 const exchangeCalcText = document.getElementById('exchange-rate');
@@ -86,7 +85,7 @@ const setIndex = function () {
 //Calculate Rate button - takes form select info, generates URL for API, then calls getData to retrieve
 const queryAPI = function () {
   setIndex();
-  URL = `https://v6.exchangerate-api.com/v6/${myKey}/pair/${selectedValue1}/${selectedValue2}`;
+  URL = `https://v6.exchangerate-api.com/v6/4a481ade6b3525871bd0c277/pair/${selectedValue1}/${selectedValue2}`;
   getData();
 };
 
