@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="style.css" rel="stylesheet" />
+  <script defer type="module" src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Rate Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img
+        src="https://www.nicepng.com/png/full/256-2562138_tax-exchange-rate-icon-png.png"
+        width="100px"
+        height="100px"
+      />
+      <h1>Exchange Rate Calculator</h1>
+      <p>Choose the currency and amounts to get exchange rate.</p>
+      <div class="calculator">
+        <div class="selector-1 parent">
+          <select class="currency-select child" id="selector-1"></select>
+          <input type="number" class="number-select child" id="number-1"></input>
+        </div>
+        <div class="swap">
+          <button id="swap">⇋ swap ⇋</button>
+          <p class="exchange-info" id="exchange-rate">1 UAE Dirham (AED) = 1 UAE Dirham (AED)</p>
+        </div>
+        <div class="selector-2 parent">
+          <select class="currency-select child" id="selector-2"></select>
+          <input type="text" class="number-select child" id="number-2"></input>
+        </div>
+        <button id="calc-btn">Calculate Rate</button>
+      </div>
+    </div>
+  </body>
+</html>
